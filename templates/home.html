@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Test</title>
+  </head>
+  <body>
+    <h1>This is a {{company_name}}.</h1>
+    <img src="https://flasktest--anumolusandeep.repl.co/static/sample_flask_banner.jpg" height="320px">
+  <h2>About Flask</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum in felis eget egestas. Maecenas et elit dapibus, viverra ipsum eget, porta magna. Ut pellentesque, elit at placerat consectetur, lorem tortor sollicitudin leo, commodo vestibulum massa leo id nisl. Vivamus lectus odio, pharetra in risus id, finibus tempor mi. Aenean massa massa, luctus quis pretium sed, sagittis ac ipsum. Sed congue turpis sit amet libero viverra, sed commodo erat placerat. Duis turpis urna, venenatis non augue eget, rutrum sollicitudin diam. Integer ut elit a est venenatis feugiat. Nam auctor ornare ante eu convallis. Donec semper vehicula congue. Pellentesque eget felis facilisis, bibendum leo ut, vehicula libero. Fusce at ligula mollis, porttitor erat et, tristique ex.</p>
+    <h2>Open Positions</h2>
+    <p>
+      {% for job in jobs %}
+        {% include 'jobitem.html' %}
+      {% endfor %}    
+    </p>
+    <button>Contact Us</button>
+  </body>
+</html>
